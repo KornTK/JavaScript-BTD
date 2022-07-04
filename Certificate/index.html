@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรแกรมคํานวนอายุ</title>
+</head>
+<body>
+    <center>
+<p><b>ยินดีต้อนรับเข้าสู่โปรแกรมคํานวนอายุ</b></p>
+<input type="text" id="inputAge" placeholder="กรุณากรอกอายุของคุณ 20-8-2001">
+<br><br>
+<button onclick="calculateAge(document.getElementById('inputAge').value)">คำนวณอายุ</button>
+<p id="show_age"></p>
+</center>
+    <script src="app.js"></script>
+    <script>
+
+        var today = new Date();
+        var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+(today.getFullYear()+543);
+        alert("วันนี้คือ " + date);
+        
+        </script>
+</body>
+</html>
